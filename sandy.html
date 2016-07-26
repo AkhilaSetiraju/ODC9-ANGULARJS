@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="include/css/styles.css" rel="stylesheet">
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js">
+    </script>
+    <script src="myApp.js"></script>
+    <style>
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="main" ng-controller="mainCtrl">
+      <div class="navbar navbar-fixed-top" id="navigation">
+        <div class="container">
+          <form class="navbar-form">
+            <div class="col-xs-10 col-sm-10 col-lg-10">
+            <input type="text"  class="form-control"  ng-model="term" placeholder="Search..." id="SearchInput">
+          </div>
+          <div class="col-xs-2 col-sm-2 col-lg-2">
+            <button type="submit" ng-click="getSearchResults()" class="btn btn-default">
+              <span class="glyphicon glyphicon-search">
+              </span>
+            </button>
+          </div>
+          </form>
+        </div>
+      </div><br><br><br>
+      <!--  -->
+      <div class="container">
+        <div class="row">
+            <div class="panel col-xs-12 col-sm-6 col-lg-6" >
+              <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for a Modal Window!</a>
+
+  						<div class="modal fade" id="myModal">
+  							<div class="modal-dialog">
+  								<div class="modal-content">
+  									<div class="modal-header">
+  										<button class="close" data-dismiss="modal">&times;</button>
+  										<h4 class="modal-title">A modal Window</h4>
+  										</div><!-- end of modal header-->
+  										<div class="modal-body">
+  											<h4>Text in a modal</h4>
+
+  												<p>
+  													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  												</p>
+  											<h4>Popovers in a model</h4>
+  												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You Clicked it!!" data-content="I knew you would.">Dont click this button</a>
+
+  											<h4>tooltips in a modal</h4>
+  												<a href="#" data-original-title="Tooltip" rel="tooltip">This link</a> shd hav a tootip and so shwd <a href="#" data-original-title="WooHoo!!" rel="tooltip">this one</a>!
+  											<hr>
+  												<p><small class="text-muted">
+  													PS. this form dsn do anything</small>
+  												</p>
+  												<form class="form-horizontal">
+  													<div class="form-group">
+  														<label class="col-lg-2 control-label" for="inputName">Name</label>
+  														<div class="col-lg-10">
+  															<input class="form-control" id="inputName" placeholder="Name" type="text">
+  														</div>
+  													</div>
+  													<div class="form-group">
+  														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+  														<div class="col-lg-10">
+  															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+  														</div>
+  													</div>
+  													<div class="form-group">
+  														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+  														<div class="col-lg-10">
+  															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+  															<button class="btn btn-success pull-right" type="submit">Send!</button>
+  														</div>
+  													</div>
+  												</form>
+  										</div><!-- end of modal body-->
+  										<div class="modal-footer">
+  											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="button">Save Changes</button>
+  										</div><!-- end of modal footer-->
+  									</div><!-- end of modal content-->
+  							</div><!-- end modal dialog-->
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="app7" ng-cloak>
+  <head>
+    <title>AngularJS </title>
+    <style>
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+
+<div ng-controller="mainCtrl as parent">
+
+  <p>
+    name:{{parent.name}}</p>
+    <p>
+      sound:{{parent.sound}}
+    </p>
+  <button ng-click=parent.animalClick()>Animal Data</button><br>
+
+</div>
+
+<div ng-controller="dogCtrl as dog">
+  <p>
+    name:{{dog.click.name}}
+  </p>
+  <p>
+    sound:{{dog.child.sound}}
+  </p>
+  <button ng-click="dog.child.animalClick()"> dog data</button><br>
+  <button ng-click="dog.child.dogData()">More dog </button><br>
+  <input ng-model="dog.child.bark"/><br><br>
+  <span>New Bark:{{dog.child.bark}}</span>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ <script src="sample4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="app1"  ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Js</title>
+    <style>
+      [ng\:cloak],[ng-cloak], .ng-cloak{
+        display: none;
+      }
+      .bluetext{
+        color:blue;
+      }
+      .boldtext{
+        font-weight: bold;
+      }
+      .stripedblue{
+        color: #007FFF;
+        background-color: #DBE9F4;
+      }
+      .stipedbeige{
+        color: #CC0000;
+        background-color: #F5F5DC;
+      }
+    </style>
+  </head>
+  <body>
+<div ng-controller="eventCtrl">
+
+<input ng-blur="blur=blur+1"
+ng-click="click=click+1"
+ng-dblclick="dblclick=dblclick+1"
+ng-copy="copy=copy+1"
+ng-paste="paste=paste+1"
+ng-cut="cut=cut+1"
+ng-focus="focus=focus+1"
+ng-model="model=model+1"
+ng-change="change=change+1"
+ng-keydown="keydown($event)"
+ng-mouseenter="mouseenter=mouseenter+1"
+ng-mouseleave="mouseleave=mouseleave+1"/>
+
+
+<h4>Blur Events:{{blur}}</h4>
+<h4>Click Event:{{click}}</h4>
+<h4>Double Click Events:{{dblclick}}</h4>
+<h4>Copy Events:{{copy}}</h4>
+<h4>Paste Events:{{paste}}</h4>
+<h4>Cut Events:{{cut}}</h4>
+<h4>Focus Events:{{focus}}</h4>
+<h4>Change Events:{{change}}</h4>
+
+<h4>Key Pressed : {{kdKey}}</h4>
+<h4>Mouse Enter Events: {{mouseenter}}</h4>
+<h4>Mouse leave Events: {{mouseleave}}</h4>
+
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="sample1.js">
+
+</script>
+
+  </body>
+</html>

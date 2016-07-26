@@ -1,0 +1,90 @@
+{
+  
+      "id": 1,
+      "Name": "AkhilaSeetiraju",
+      "Person_Details":{
+      "e-mail": "akhila11.95@gmail.com",
+      "When you were born?": "11.5.1995",
+      "Where you live?": "Chennai",
+      "Nationality": "Indian",
+      "Marital status": "Single"},
+
+"Educational_Qualification":[{
+
+   "HSC": {
+     "Name": "S.h.n.v.hr.sec.school",
+     "When": "2012",
+     "Where": "Jalandhar"
+   },
+   "SSC": {
+     "Name": "D A V Centenary Public school",
+     "When": "2012",
+     "Where": "Haridwar"
+   },
+   "Post Graduation": {
+     "Name": "Lovely Professional University",
+     "From": "2012",
+     "To": "2016",
+     "Where": "Phagwara"
+   }
+}],
+
+"Experience": [{
+    "Projects": {
+      "Title": "TradeOffs of NOC technology",
+      "Description": "Lorem",
+      "Duration in months": "4"
+    },
+    "Work Experience": {
+      "Organization": "Cognizant Technical soultions",
+      "Where": "Chennai",
+      "Experience": "2"
+    }
+}]
+
+
+
+{
+      "id": 2,
+      "Name": "Seshan",
+      "Person_Details":{
+      "e-mail": "akhila11.95@gmail.com",
+      "When you were born?": "11.5.1995",
+      "Where you live?": "Chennai",
+      "Nationality": "Indian",
+      "Marital status": "Single"},
+
+"Educational_Qualification":[{
+
+   "HSC": {
+     "Name": "S.h.n.v.hr.sec.school",
+     "When": "2012",
+     "Where": "Jalandhar"
+   },
+   "SSC": {
+     "Name": "D A V Centenary Public school",
+     "When": "2012",
+     "Where": "Haridwar"
+   },
+   "Post Graduation": {
+     "Name": "Lovely Professional University",
+     "From": "2012",
+     "To": "2016",
+     "Where": "Phagwara"
+   }
+}],
+
+"Experience": [{
+    "Projects": {
+      "Title": "TradeOffs of NOC technology",
+      "Description": "Lorem",
+      "Duration in months": "4"
+    },
+    "Work Experience": {
+      "Organization": "Cognizant Technical soultions",
+      "Where": "Chennai",
+      "Experience": "2"
+    }
+}]
+}
+}

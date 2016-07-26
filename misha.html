@@ -1,0 +1,46 @@
+<html ng-app="app1">
+<head>
+  <title> user form </title>
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="myefforts.js"></script>
+  <div ng-controller="UserForm">
+    <div  ng-show="content.Name" class="ng-hide">
+    <label> User Name </label>
+     {{content.Name}}
+    </div>
+    <h1> {{content.Person_Details.e_mail}} </h1>
+    <h2> Personal Details : </h2>
+    <label> Email: </label>
+    <input type="text" ng-model="email" ng-required="true" ng-minlength="2"  placeholder={{content.Person_Details.e_mail}}><br><br>
+    <label> When you were born : </label>
+    <input type="date" ng-model="dob" ng-required="true" placeholder="yyyy-MM-dd" ng-minlength="2"><br><br>
+    <label> Where do you live : </label>
+    <textarea type="text" ng-model="place" ng-required="true" ng-minlength="2" placeholder={{content.Person_Details.Where_you_live}}></textarea><br><br>
+    <label> Nationality :</label>
+    <input type="text" ng-model="nationality" ng-required="true" ng-minlength="2" placeholder={{content.Person_Details.Nationality}}><br><br>
+    <label> Marital status </label>
+    <input type="text" ng-model="maritalStatus" ng-required="true" ng-minlength="2" placeholder={{content.Person_Details.Marital_status}}><br><br>
+    <h2> Educational Details : </h2>
+    <h3> High School Details: </h3>
+    <label> School : </label>
+    <input type="text" ng-model="hSchoolName" ng-required="true" ng-minlength="2" placeholder={{content.Educational_Qualification.HSC.Name}}><br><br>
+    <label> Year of passing : </label>
+    <input type="text" ng-model="hSchoolTime" ng-required="true" ng-minlength="2" placeholder={{content.Educational_Qualification.HSC.When}}><br><br>
+    <label> Place : </label>
+    <input type="text" ng-model="hSchoolPlace" ng-required="true" ng-minlength="2" placeholder={{content.Educational_Qualification.HSC.Where}}><br><br>
+    <label> Percentage Scored :</label>
+    <input type="text" ng-model="hSchoolPercentage" ng-required="true" ng-minlength="2" placeholder={{content.Educational_Qualification.HSC.percentage}}><br><br>
+    <h2> Experience : </h2>
+    <h3> Projects undertaken: </h3>
+    <label> Title: </label>
+    <input type="text" ng-model="title" ng-required="true" ng-minlength="2" placeholder={{content.Experience.Projects.Title}}><br><br>
+    <label> Description : </label>
+    <input type="text" ng-model="description" ng-required="true" ng-minlength="2" placeholder={{content.Experience.Projects.Description}}><br><br>
+    <label> Duration : </label>
+    <input type="text" ng-model="duration" ng-required="true" ng-minlength="2" placeholder={{content.Experience.Projects.Duration_in_months}}><br><br>
+    <button type="submit and view profile" ng-click="getData()" class="btn btn-default">Get Data and view profile</button>
+    </div>
+</body>
+</html>

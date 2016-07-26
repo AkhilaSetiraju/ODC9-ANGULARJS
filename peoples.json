@@ -1,0 +1,11 @@
+{"people":[{"id":1,"name":"Sandy","aId":572869,"workPlace":"chennai","exp":0},
+{"id":2,"name":"Aashis","aId":572870,"workPlace":"chennai","exp":0},
+{"id":3,"name":"Alok","aId":572871,"workPlace":"Banglore","exp":1},
+{"id":4,"name":"Ridhima","aId":572872,"workPlace":"Banglore","exp":1},
+{"id":5,"name":"Suthiga","aId":572873,"workPlace":"Pune","exp":2},
+{"id":6,"name":"Vineela","aId":572874,"workPlace":"Pune","exp":2},
+{"id":7,"name":"Sunny","aId":572875,"workPlace":"Delhi","exp":3},
+{"id":8,"name":"Arun","aId":572876,"workPlace":"Delhi","exp":3},
+{"id":9,"name":"Bhawana","aId":572877,"workPlace":"Kolkata","exp":4},
+{"id":10,"name":"Aviral","aId":572878,"workPlace":"Kolkata","exp":4},
+{"id":11,"name":"Shubham","aId":572879,"workPlace":"Mumbai","exp":4}]}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app = 'app1' ng-cloak>
+<head>
+ <title>A channel</title>
+ <style>
+ [ng\:cloak], [ng-cloak], .ng-cloak{
+   display:none;
+ }
+ </style>
+</head>
+<body>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+ <div ng-controller='ctrl1'>
+     {{member}}
+   <input ng-model='newMember'/>
+   <input ng-model='place'/>
+   <button ng-click="addMember()">Add Member</button>
+ </div>
+ <script>
+var app1=angular.module("app1",[]);
+ app1.controller('ctrl1', function ($scope, $http){
+   var config={
+  headers:{ 'Content-Type':'application/JSON'}
+ }
+ $http.get("http://localhost:3000/profiles")
+ .then(function mySucces(response) {
+         $scope.member = response.data;
+       },
+       function myError(response){
+         $scope.member = response.statusText;
+     });
+ $scope.addMember  = function()
+ {
+       $scope.member.push({'username':$scope.newMember,'place':{'living_place':$scope.place}});
+       var user ={ 'username' : $scope.newMember,'place':{'living_place':$scope.place}};
+ var res= $http.post("http://localhost:3000/profiles", user,config);
+ res.success(function(data, status, headers, config) {
+            $scope.message = data;
+        });
+        res.error(function(data, status, headers, config) {
+            alert( "failure message: " + JSON.stringify({data: data}));
+        });
+    };
+});
+ </script>
+</body>
+</html>
